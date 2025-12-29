@@ -1,0 +1,1 @@
+POC to study smartwatches android apps
