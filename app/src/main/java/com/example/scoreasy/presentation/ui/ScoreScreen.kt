@@ -1,9 +1,11 @@
 package com.example.scoreasy.presentation.ui
 
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.wear.compose.material.*
@@ -23,11 +25,12 @@ fun ScoreScreen(
         Column(
             modifier = Modifier
                 .fillMaxSize()
+                .background(Color.Black)
                 .padding(10.dp),
             verticalArrangement = Arrangement.SpaceBetween
         ) {
             Column(horizontalAlignment = Alignment.CenterHorizontally, modifier = Modifier.fillMaxWidth()) {
-                Text("Placar", fontSize = 16.sp)
+                Text("Score", fontSize = 16.sp)
                 Spacer(Modifier.height(6.dp))
                 Text("${state.pointsA}  -  ${state.pointsB}", fontSize = 34.sp)
             }
@@ -45,7 +48,7 @@ fun ScoreScreen(
                 horizontalArrangement = Arrangement.SpaceEvenly
             ) {
                 OutlinedButton(onClick = { onAction(Action.Undo) }) { Text("Undo") }
-                OutlinedButton(onClick = { onAction(Action.Reset) }) { Text("Zerar") }
+                OutlinedButton(onClick = { onAction(Action.Reset) }) { Text("Reset") }
             }
         }
     }
