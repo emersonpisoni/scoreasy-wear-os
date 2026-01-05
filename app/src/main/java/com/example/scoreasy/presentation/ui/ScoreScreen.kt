@@ -30,6 +30,7 @@ fun ScoreScreen(
             verticalArrangement = Arrangement.SpaceBetween
         ) {
             Column(horizontalAlignment = Alignment.CenterHorizontally, modifier = Modifier.fillMaxWidth()) {
+                Text("ScorEasy", fontSize = 20.sp)
                 Text("Games: ${state.gamesA}  -  ${state.gamesB}", fontSize = 18.sp)
 
                 val pa = pointText(state.pointA, Team.A)
