@@ -33,5 +33,3 @@ After paired and connected, look if your smartwatch was identified as a device a
 <p align="center">
   <img src="./app/assets/smartwatch.jpeg" width="300" />
 </p>
-
-![Image](./app/assets/smartwatch.jpeg)
