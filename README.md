@@ -30,5 +30,8 @@ adb connect IP:PORT
 
 After paired and connected, look if your smartwatch was identified as a device and click "play" to run
 
+<p align="center">
+  <img src="./app/assets/smartwatch.jpeg" width="300" />
+</p>
 
-[Image](./app/assets/smartwatch.jpeg)
+![Image](./app/assets/smartwatch.jpeg)
